@@ -271,7 +271,7 @@ function mostrarPersonagens(items) { // items vai receber data, q data é os dad
 }
 
 function characterDetails(id){
-    window.location.href = `../PAGES/person.html?id=${id}`
+    window.location.href = `./person.html?id=${id}`
 }
 
 function fetchCharacters(url) { // isso aqui pra atualizar o fetch e conseguir filtrar
