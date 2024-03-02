@@ -788,8 +788,6 @@ footer .pagesLinks p:hover{
     }
 
     body{
-        background-size: 100% 60%;
-        background-repeat: no-repeat;
         width: 768px;
     }
 
@@ -849,9 +847,6 @@ footer .pagesLinks p:hover{
 
 
 @media screen and (max-width: 766px){
-    body{
-        background-size: 100% 50%;
-    }
     .character-container{
         height: 1000px;
         width: 100%;
@@ -879,5 +874,45 @@ footer .pagesLinks p:hover{
 
     footer{
         width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 425px){
+    body{
+        width: 425px;
+    }
+    .container{
+        width: 425px;
+    }
+    .character-container{
+        width: 425px;
+    }
+
+    .hero h1, .hero h2{
+        width: 425px;
+        font-size: 80px;
+    }
+
+    .characterTitleList{
+        width: 300px;
+    }
+    .characterTitleList p{
+        font-size: 25px;
+    }
+
+
+    .character-container{
+        height: 1300px;
+    }
+
+    .characters-cards{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+
+    .casasHogwarts{
+        display: flex;
+        flex-direction: column;
     }
 }
