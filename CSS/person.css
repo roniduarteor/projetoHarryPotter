@@ -1,0 +1,465 @@
+:root{
+    --azul-escuro: #0E1A42;
+    --azul-claro: #222F5B;
+}
+
+@font-face {
+    font-family: 'Harry P';
+    src: url('../fonts/HARRYP__.TTF') format('truetype');
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #0E1A42;
+    background-image: url('../img/LoginBackground.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+/* -------------------- HEADER E NAV BAR -------------------------- */
+.header{
+    width: 100vw;
+    height: 96px;
+    
+    background-color: #222F5B;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar{
+    height: 76px;
+    width: 93.05555556vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+
+    gap: 217px;
+}
+
+.logoImgName{
+    display: flex;
+    gap: 14.39px;
+}
+
+.logoImgName .logoName{
+    height: 51;
+    color: #FFF;
+    font-family: "Harry P";
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 400;
+
+    text-decoration: none;
+    margin-top: 12px;
+}
+
+.decorationBar{
+    width: 424px;
+    height: 11px;
+
+    border-radius: 15px;
+    background: #946B2D;
+    box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.infos{
+    width: 255px;
+    height: 49px;
+
+    display: flex;
+    gap: 20px;
+}
+
+.infos .login{
+    width: 105px;
+    height: 49px;
+
+    border-radius: 15px;
+    background: #946B2D;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.infos .login .loginName{
+    color: #FFF;
+    font-family: "Harry P";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+
+
+.infos .aboutUs{
+    width: 105px;
+    height: 49px;
+
+    border-radius: 15px;
+    border: 1px solid #946B2D;
+    background: #222F5B;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.infos .aboutUs:hover{
+    background: #946B2D;
+    cursor: pointer;
+}
+.infos .aboutUs .aboutUsName{
+    color: #FFF;
+    font-family: "Harry P";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+/* -------------------- MAIN -------------------------- */
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.title-box .mainTitle{
+    color: #FFF;
+    font-family: "Harry P";
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 23px;
+}
+.informatio-box{
+    width: 1116px;
+    height: 818px;
+
+    border-radius: 10px;
+    background: #222F5B;
+    box-shadow: 6px 4px 17.1px 0px rgba(0, 0, 0, 0.50), 0px 0px 40px -13px rgba(255, 255, 255, 0.25) inset, -6px -4px 17.1px 0px rgba(0, 0, 0, 0.15), 0px 4px 138px 64px rgba(0, 0, 0, 0.25) inset;
+}
+
+
+
+/*               MAIN CHARACTERS             */
+.informatio-box{
+    display: flex;
+    flex-direction: row;
+}
+.character-information{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.character-box{
+    display: flex;
+    flex-direction: row;
+    padding: 28px;
+    justify-content: center;
+}
+.character-information .personImg{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+}
+.character-information .personImg img{
+    width: 387px;
+    height: 736px;
+
+    border-radius: 10px;
+}
+
+
+/*              PRIMEIRAS INFOS               */
+
+.geralInformations .primeirasInfos{
+    width: 650px;
+    height: 250px;
+    margin-left: 28px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.primeirasInfos .infos-texto{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.primeirasInfos .infos-texto h2{
+    color: #946B2D;
+    font-family: "Harry P";
+    font-size: 76px;
+    font-style: normal;
+    font-weight: 400;
+}
+.primeirasInfos .infos-texto h4{
+    color: #5D5D5D;
+    font-family: "Roboto Mono";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+
+    margin-left: 20px;
+}
+.primeirasInfos .infos-texto .nicknamesText{
+    width: 377px;
+    color: #946B2D;
+    font-family: "Roboto Mono";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+}
+.primeirasInfos .infos-texto .blood{
+    width: 167px;
+    height: 41px;
+    
+    border-radius: 17px;
+    background: #946B2D;
+
+    color: #FFF;
+    font-family: "Roboto Mono";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hogwartsHouse{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*              SEGUNDAS INFOS                   */
+
+.segundasInfos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-top: 30px;
+}
+
+.infoBox{
+    border-radius: 10px;
+    background: #0E1A42;
+    width: 177.746px;
+    height: 92.047px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #FFF;
+    font-family: "Harry P";
+
+    margin-left: 28px;
+}
+
+.infoBox p{
+    color: #FFF;
+    font-family: "Harry P";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.infoBox .gender{
+    font-size: 60px;
+}
+.infoBox .species{
+    font-size: 60px;
+}
+
+/*              TERCEIRAS INFOS                   */
+
+.terceiraInfos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 20px;
+    margin-top: 37px;
+}
+
+.terceiraInfos h4{
+    color: #FFF;
+    font-family: "Roboto Mono";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.wandInfos{
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.wood{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+.core{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.length{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+.category{
+    width: 110.034px;
+    height: 33.856px;
+
+    border-radius: 10px;
+    background: #0E1A42;
+
+    color: #FFF;
+    font-family: "Roboto Mono";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.material{
+    color: #946B2D;
+    font-family: "Roboto Mono";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+
+    text-align: center;
+}
+
+.backBtn{
+    width: 484.381px;
+    height: 58.8px;
+
+    border-radius: 15px;
+    background: #946B2D;
+
+    border: none;
+    text-decoration: none;
+
+    margin-top: 40px;
+}
+.backBtn p{
+    
+
+    color: #FFF;
+    text-align: center;
+    font-family: "Roboto Mono";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    
+}
+/*                  FOOTER                   */
+
+
+footer{
+    width: 100%;
+    height: 184px;
+    background-color: #222F5B;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 21px;
+    padding: 31px;
+
+    margin-top: 140px;
+}
+
+footer .iconsLink a{
+    padding: 5px;
+    text-decoration: none;
+}
+
+footer .copyrightText{
+    color: #FFF;
+    font-family: 'Roboto Mono';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+footer .pagesLinks{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+footer .pagesLinks a{
+    text-decoration: none;
+}
+footer .pagesLinks p{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    color: #FFF;
+    font-family: 'Roboto Mono';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+}
+footer .pagesLinks p:hover{
+    color: #946B2D;
+}

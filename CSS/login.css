@@ -1,0 +1,378 @@
+:root{
+    --azul-escuro: #0E1A42;
+    --azul-claro: #222F5B;
+}
+
+@font-face {
+    font-family: 'Harry P';
+    src: url('../fonts/HARRYP__.TTF') format('truetype');
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #0E1A42;
+    background-image: url('../img/LoginBackground.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+/* -------------------- HEADER E NAV BAR -------------------------- */
+.header{
+    width: 100vw;
+    height: 96px;
+    
+    background-color: #222F5B;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar{
+    height: 76px;
+    width: 93.05555556vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+
+    gap: 217px;
+}
+
+.logoImgName{
+    display: flex;
+    gap: 14.39px;
+}
+
+.logoImgName .logoName{
+    height: 51;
+    color: #FFF;
+    font-family: "Harry P";
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 400;
+
+    text-decoration: none;
+    margin-top: 12px;
+}
+
+.decorationBar{
+    width: 424px;
+    height: 11px;
+
+    border-radius: 15px;
+    background: #946B2D;
+    box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+
+    margin-left: 75px;
+}
+
+.infos{
+    width: 255px;
+    height: 49px;
+
+    display: flex;
+    gap: 20px;
+}
+
+.infos .login{
+    width: 105px;
+    height: 49px;
+
+    border-radius: 15px;
+    background: #946B2D;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.infos .login .loginName{
+    color: #FFF;
+    font-family: "Harry P";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+
+
+.infos .aboutUs{
+    width: 105px;
+    height: 49px;
+
+    border-radius: 15px;
+    border: 1px solid #946B2D;
+    background: #222F5B;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.infos .aboutUs:hover{
+    background: #946B2D;
+    cursor: pointer;
+}
+.infos .aboutUs .aboutUsName{
+    color: #FFF;
+    font-family: "Harry P";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+
+
+
+
+
+/* -------------------- MAIN -------------------------- */
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 53px;
+}
+
+.mainLogo{
+    margin-bottom: 54px;
+}
+
+main form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 613px;
+    height: 754px;
+
+
+    border-radius: 10px;
+background: rgba(34, 47, 91, 0.70);
+box-shadow: 6px 4px 17.1px 0px rgba(0, 0, 0, 0.50), 0px 0px 40px -13px rgba(255, 255, 255, 0.25) inset, -6px -4px 17.1px 0px rgba(0, 0, 0, 0.15), 0px 4px 138px 64px rgba(0, 0, 0, 0.25) inset;
+
+}
+
+.loginBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+}
+
+.loginBox .loginText{
+    color: #FFF;
+    font-family: "Harry P";
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 400;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 100px;
+}
+
+.loginBox .user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loginBox .user input{
+    padding-right: 100px;
+    
+    width: 473px;
+    height: 63px;
+    border: 1px solid #FFF;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: none;
+    outline: none;
+    box-shadow: 0 0 0 0;
+
+    color: white;
+    font-size: 32px;
+    
+
+    margin-right: -60px;
+    
+}
+.loginBox .user input::placeholder{
+    color: rgb(188, 188, 188);
+    font-family: 'Roboto Mono';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.loginBox .password{
+    margin-top: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loginBox .password input{
+    padding-right: 100px;
+    
+    width: 473px;
+    height: 63px;
+    border: 1px solid #FFF;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: none;
+    outline: none;
+    box-shadow: 0 0 0 0;
+
+    color: white;
+    font-size: 32px;
+
+    margin-right: -60px;
+    
+}
+.loginBox .password input::placeholder{
+    color: rgb(188, 188, 188);
+    font-family: 'Roboto Mono';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+
+.rememberAndForgot{
+    width: 431px;
+    height: 21px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 28px;
+}
+
+.rememberAndForgot .rememberMe label{
+    color: #FFF;
+    font-family: "Roboto Mono";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+
+}
+
+.rememberAndForgot .forgotPassword a{
+    color: #5D5D5D;
+    font-family: "Roboto Mono";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.btnLoginAndDontHave{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btnLoginAndDontHave .btnLogin{
+    width: 366px;
+    height: 60px;
+
+    border-radius: 15px;
+    background: #0E1A42;
+    border: none;
+
+    color: #FFF;
+    font-family: "Roboto Mono";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    
+    margin-top: 62px;
+
+    cursor: pointer;
+}
+
+.btnLoginAndDontHave p{
+    margin-top: 31px;
+
+    color: #FFF;
+    font-family: "Roboto Mono";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+
+/*                  FOOTER                   */
+
+
+footer{
+    width: 100%;
+    height: 184px;
+    background-color: #222F5B;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 21px;
+    padding: 31px;
+
+    margin-top: 140px;
+}
+
+footer .iconsLink a{
+    padding: 5px;
+    text-decoration: none;
+}
+
+footer .copyrightText{
+    color: #FFF;
+    font-family: 'Roboto Mono';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+footer .pagesLinks{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+footer .pagesLinks a{
+    text-decoration: none;
+}
+footer .pagesLinks p{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    color: #FFF;
+    font-family: 'Roboto Mono';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+}
+footer .pagesLinks p:hover{
+    color: #946B2D;
+}
