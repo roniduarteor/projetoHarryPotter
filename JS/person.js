@@ -152,7 +152,6 @@ function noBirthday(dateOfBirth){
     }
 }
 
-
 function noWood(wood){
     if(wood == ""){
         return `Unknow`

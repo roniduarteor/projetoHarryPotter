@@ -38,14 +38,12 @@ body{
 
 .navbar{
     height: 76px;
-    width: 93.05555556vw;
+    width: 90%;
 
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content:space-between;
     align-items: center;
-
-    gap: 217px;
 }
 
 .logoImgName{
@@ -277,6 +275,7 @@ main{
     justify-content: space-between;
 
     margin-top: 30px;
+    margin-left: 28px;
 }
 
 .infoBox{
@@ -290,8 +289,6 @@ main{
 
     color: #FFF;
     font-family: "Harry P";
-
-    margin-left: 28px;
 }
 
 .infoBox p{
@@ -462,4 +459,412 @@ footer .pagesLinks p{
 }
 footer .pagesLinks p:hover{
     color: #946B2D;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px){
+    .informatio-box{
+        width: 90%;
+    }
+
+    .geralInformations .primeirasInfos{
+        display: flex;
+        flex-direction: row;
+        width: 450px;
+
+        gap: 0px;
+    }
+
+    .primeirasInfos .infos-texto{
+        width: 300px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hogwartsHouse img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .segundasInfos{
+        display: flex;
+        flex-direction: row;
+        width: 450px;
+        margin-left: 28px;
+    }
+
+    .infoBox{
+        width: 130px;
+    }
+
+    .infoBox p{
+        font-size: 25px;
+    }
+    .infoBox .species{
+        font-size: 50px;
+    }
+    .infoBox .gender{
+        font-size: 50px;
+    }
+
+    .backBtn{
+        width: 400px;
+    }
+}
+@media screen and (max-width: 768px){
+    body{
+        background-size:auto;
+    }
+    .decorationBar{
+        width: 100px;
+    }
+
+    .informatio-box{
+        width: 70%;
+        height: 1100px;
+    }
+
+    .character-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .character-information .personImg{
+        height: 250px;
+        width: 50%;
+    }
+
+    .character-information .personImg img{
+        width: 100%;
+        height: 100%;
+    }
+
+    
+    .geralInformations{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .geralInformations .primeirasInfos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0px;
+        height: 350px;
+
+        gap: 0px;
+    }
+
+    .primeirasInfos .infos-texto{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:  100%;
+        gap: 10px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    .primeirasInfos .infos-texto .nicknamesText{
+        text-align: center;
+        
+    }
+
+    .hogwartsHouse{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100px;
+        margin-bottom: 20px;
+    }
+
+    .hogwartsHouse img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .segundasInfos{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 0px;
+        padding: 10px;
+    }
+
+    .infoBox{
+        width: 130px;
+        margin: 10px;
+    }
+
+    .infoBox p{
+        font-size: 25px;
+    }
+    .infoBox .species{
+        font-size: 50px;
+    }
+    .infoBox .gender{
+        font-size: 50px;
+    }
+
+    .backBtn{
+        width: 200px;
+    }
+
+    .terceiraInfos{
+        width: 300px;
+        margin: 0px;
+    }
+
+    .category{
+        width: 100px;
+    }
+
+    .material{
+        text-align: start;
+    }
+
+    .backBtn{
+        margin-top: 10px;
+    }
+}
+
+
+@media screen and (max-width: 425px){
+    body{
+        background-size:auto;
+    }
+
+    .header{
+        width: 430px;
+    }
+
+    .infos{
+        
+        width: 150px;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3px;
+    }
+
+    .infos .login, .infos .aboutUs{
+        font-size: 10px;
+        color: red;
+        width: 100%;
+    }
+
+    .login .loginName{
+        font-size: 10px;
+    }
+    .decorationBar{
+        width: 0px;
+    }
+
+    .title-box .mainTitle{
+        font-size: 50px;
+    }
+
+    .informatio-box{
+        width: 80%;
+        height: 1400px;
+    }
+
+    .character-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .character-information .personImg{
+        height: 250px;
+        width: 70%;
+    }
+
+    .character-information .personImg img{
+        width: 100%;
+        height: 100%;
+    }
+
+    
+    .geralInformations{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .geralInformations .primeirasInfos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0px;
+        height: 350px;
+
+        gap: 0px;
+    }
+
+    .primeirasInfos .infos-texto{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:  100%;
+        gap: 10px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    .primeirasInfos .infos-texto .nicknamesText{
+        text-align: center;
+        
+    }
+
+    .hogwartsHouse{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100px;
+        margin-bottom: 20px;
+    }
+
+    .hogwartsHouse img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .segundasInfos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0px;
+        padding: 10px;
+    }
+
+    .infoBox{
+        width: 130px;
+        margin: 10px;
+    }
+
+    .infoBox p{
+        font-size: 25px;
+    }
+    .infoBox .species{
+        font-size: 50px;
+    }
+    .infoBox .gender{
+        font-size: 50px;
+    }
+
+    .backBtn{
+        width: 200px;
+    }
+
+    .terceiraInfos{
+        width: 300px;
+        margin: 0px;
+    }
+
+    .category{
+        width: 100px;
+    }
+
+    .material{
+        text-align: start;
+    }
+
+    .backBtn{
+        margin-top: 10px;
+    }
+
+    .wood{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .core{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .length{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 375px){
+    body{
+        background-size:auto;
+    }
+
+    .header{
+        width: 375px;
+    }
+
+    .infos{
+        
+        width: 150px;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3px;
+    }
+
+    .infos .login, .infos .aboutUs{
+        font-size: 10px;
+        color: red;
+        width: 100%;
+    }
+
+    .logoImgName .logoName{
+        font-size: 40px;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 320px){
+    body{
+        background-size:auto;
+    }
+
+    .header{
+        width: 320px;
+    }
+
+    .infos{
+        
+        width: 150px;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3px;
+    }
+
+
+    .logoImgName .logoName{
+        font-size: 40px;
+        margin-top: 20px;
+    }
 }
