@@ -879,6 +879,9 @@ footer .pagesLinks p:hover{
     footer{
         width: 100%;
     }
+    footer section{
+        margin: 0px;
+    }
 }
 
 
