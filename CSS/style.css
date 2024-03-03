@@ -36,14 +36,14 @@ body{
 
 .navbar{
     height: 76px;
-    width: 95vw;
+    width: 90%;
 
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content:space-between;
     align-items: center;
 
-    gap: 217px;
+    
 }
 
 .logoImgName{
@@ -64,7 +64,7 @@ body{
 }
 
 .decorationBar{
-    width: 100%;
+    width: 500px;
     height: 11px;
 
     border-radius: 15px;
@@ -414,7 +414,7 @@ body{
 
 .casa1 p{
     width: 100%;
-    font-size: 100%;
+    font-size: 40px;
 }
 
 .casa1 img{
@@ -449,7 +449,7 @@ body{
 
 .casa2 p{
     width: 100%;
-    font-size: 100%;
+    font-size: 40px;
 }
 
 .casa2 img{
@@ -483,7 +483,7 @@ body{
 
 .casa3 p{
     width: 100%;
-    font-size: 100%;
+    font-size: 40px;
 }
 
 .casa3 img{
@@ -517,7 +517,7 @@ body{
 
 .casa4 p{
     width: 100%;
-    font-size: 100%;
+    font-size: 40px;
 }
 
 .casa4 img{
@@ -871,6 +871,10 @@ footer .pagesLinks p:hover{
         width: 15vw;
     }
 
+    .casa1 img, .casa2 img, .casa3 img, .casa4 img{
+        width: 50px;
+    }
+
 
     footer{
         width: 100%;
@@ -878,9 +882,49 @@ footer .pagesLinks p:hover{
 }
 
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 430px){
     body{
         width: 425px;
+        background-size: 430px 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header{
+        width: 430px;
+    }
+
+    .infos{
+        
+        width: 150px;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3px;
+    }
+
+    .infos .login, .infos .aboutUs{
+        font-size: 10px;
+        color: red;
+        width: 100%;
+    }
+
+    .login .loginName{
+        font-size: 10px;
+    }
+
+    .hero{
+        background-size: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1{
+        margin-left: 70px;
+        margin-bottom: -70px;
     }
     .container{
         width: 425px;
@@ -895,24 +939,122 @@ footer .pagesLinks p:hover{
     }
 
     .characterTitleList{
-        width: 300px;
+        width: 430px;
+        margin: 0px;
+        background: rgba(0,0,0,0);
+        margin-bottom: -30px;
     }
     .characterTitleList p{
-        font-size: 25px;
+    color: #0E1A42;
+    font-family: "Roboto Mono", monospace;
+    font-size: 25px;
+    background-color: #FFF;
+    border-radius: 15px;
+    width: 300px;
+    height: 40px;
+    text-align: center;
     }
 
 
     .character-container{
-        height: 1300px;
+        height: 1850px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 430px;
     }
 
     .characters-cards{
+        height: 100%;
+        width: 100%;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     }
 
+    .charactersBox{
+        width: 100%;
+    }
+
+    .principaisInfos .character-img img {
+        width: 25vw;
+    }
+
+    .filter{
+        height: 100%;
+    }
+
     .casasHogwarts{
+        width: 100%;
         display: flex;
         flex-direction: column;
+    }
+
+    .casa1, .casa2, .casa3, .casa4{
+        width: 320px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .casa1 img, .casa2 img, .casa3 img, .casa4 img{
+        width: 50px;
+    }
+
+    footer{
+        width: 430px;
+    }
+}
+
+
+@media screen and (max-width: 375px){
+
+    body{
+        width: 375px;
+        background-size: 375px 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header{
+        width: 375px;
+    }
+
+    .hero{
+        margin: 0;
+    }
+
+    .hero h1{
+        width: 375px;
+        margin-left: 0px;
+    }
+    .hero h2{
+        width: 375px;
+        margin-left: 0px;
+    }
+
+    .container{
+        width: 375px;
+    }
+
+    .characterTitleList{
+        width: 375px;
+        margin: 0px;
+        background: rgba(0,0,0,0);
+        margin-bottom: -30px;
+    }
+
+    .character-container{
+        height: 1850px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 375px;
+    }
+
+
+
+    footer{
+        width: 375px;
     }
 }
