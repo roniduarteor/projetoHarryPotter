@@ -21,6 +21,7 @@ fetch(baseUrl)
 
 function mostrarPersonagens(items) { // items vai receber data, q data é os dados da api
     const containerPerso = document.getElementById("characters-cards")
+    containerPerso.innerHTML = "";
 
     dataIndice = items //dataIndice recebe o array completo
 
@@ -219,7 +220,6 @@ function mostrarPersonagens(items) { // items vai receber data, q data é os dad
     
         const btnGryffindor = document.querySelector('.casa1')
     btnGryffindor.addEventListener('click', () => {
-        containerPerso.innerHTML = "";
     baseUrl = 'https://hp-api.onrender.com/api/characters/house/gryffindor'
     indiceInicial = 0
     indiceFinal = 9
@@ -233,10 +233,10 @@ function mostrarPersonagens(items) { // items vai receber data, q data é os dad
 
         const btnSlytherin = document.querySelector('.casa2')
     btnSlytherin.addEventListener('click', () => {
-        containerPerso.innerHTML = "";
     baseUrl = 'https://hp-api.onrender.com/api/characters/house/slytherin'
     indiceInicial = 0
     indiceFinal = 9
+    debugger
 
      pagina = 1
      paginaAnt = 0
@@ -245,7 +245,6 @@ function mostrarPersonagens(items) { // items vai receber data, q data é os dad
 
         const btnRavenclaw = document.querySelector('.casa3') // a melhor casa né
     btnRavenclaw.addEventListener('click', () => {
-        containerPerso.innerHTML = "";
     baseUrl = 'https://hp-api.onrender.com/api/characters/house/ravenclaw'
     indiceInicial = 0
     indiceFinal = 9
@@ -254,9 +253,8 @@ function mostrarPersonagens(items) { // items vai receber data, q data é os dad
      paginaAnt = 0
     fetchCharacters(baseUrl)
 })
-        const btnHufflepuff = document.querySelector('.casa4') // a melhor casa né
+        const btnHufflepuff = document.querySelector('.casa4')
         btnHufflepuff.addEventListener('click', () => {
-        containerPerso.innerHTML = "";
     baseUrl = 'https://hp-api.onrender.com/api/characters/house/hufflepuff'
     indiceInicial = 0
     indiceFinal = 9
